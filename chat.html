@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Messenger App</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="messenger">
+            <div id="chat">
+                <ul id="messages">
+                </ul>
+            </div>
+            <div class="msg-sender cf">
+                <input type="text" class="input-box" id="message-input" name="message">
+                <button class="btn" id="send-btn">Send</button>
+            </div>
+        </section>
+        <section class="loading-screen" style="display: none">
+            <div class="loader"></div>
+        </section>
+        <section class="error-screen" style="display: none">
+            <div class="error-message">
+                <h1>An error has ocurred.<br>
+                Please reload
+                </h1>
+                <button onClick="window.location.reload();" id="refresh-btn">Reload</button>
+            </div>
+        </section>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>

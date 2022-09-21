@@ -1,0 +1,244 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(46, 48, 48);
+    overflow: overlay;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#messenger{
+    margin-top: 1vh;
+    height: 99vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#chat{
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    outline-style: none;
+    border-radius: 20px;
+    overflow: overlay;
+    transition: color .3s ease;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-fill-color: black;
+}
+
+#chat:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.he-sent{
+    list-style: none;
+    padding: 5px 10px 5px 10px;
+}
+
+.i-sent{
+    display: flex;
+    list-style: none;
+    padding: 5px 10px 5px 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.input-box{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding: 10px 15px;
+    padding-right: 85px;
+    float: left;
+    border: 0;
+    background: #fff;
+    border-radius: 40px;
+    border-top-style: none;
+}
+
+.btn{
+    overflow: visible;
+    position: absolute;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 50px;
+    width: 80px;
+    font: 18px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    background: #198cff;
+    border-radius: 40px;
+}
+
+.btn:hover{
+    background: #136dc7;
+}
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+}    
+/* Form wrapper styling */
+
+.msg-sender .input-box:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.8) inset;
+}
+
+.msg-sender{
+    width: 100%;
+    border-radius: 40px;
+    background: transparent;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.i-sent div,
+.he-sent div {
+    display: inline-block;
+    overflow-wrap: break-word;
+    list-style: none;
+    font-size: 20px;
+    padding: 1px 4px 1px 4px;
+    border-radius: 10px;
+    max-width: 80%;
+    min-width: 4%;
+    font-family: 'Roboto', sans-serif;
+}
+.i-sent div{
+    background-color:rgb(85, 201, 255);
+}
+
+.he-sent div{
+    background-color:rgb(43, 148, 197);
+}
+
+#messages li h4{
+    -webkit-text-fill-color: rgb(126, 126, 126);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#messages li div h3{
+    margin: 10px 5px 10px 5px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#messages li h5{
+    -webkit-text-fill-color: rgb(92, 92, 92);
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
+}
+
+.loading-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+  }
+
+.error-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+.error-message{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.error-message h1{
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#refresh-btn{
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    color: black;
+    border: 1px solid #b9b9b9;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+#refresh-btn:hover{
+    background-color:#b9b9b9;
+    cursor: pointer;
+}
+
+#refresh-btn:active{
+    background-color:#9b9b9b;
+    transition: 0s;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
