@@ -1,5 +1,5 @@
 
-const socket = io("http://192.168.1.187:3000");
+const socket = io("http://localhost:3000");
 
 var send_btn = document.getElementById("send-btn");
 var messenger_div = document.getElementById("messenger");
