@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "socket.io-client": "^4.5.1"
-  }
+  },
+  "name": "messenger-by-dvir",
+  "version": "1.0.0",
+  "description": "Instant messaging app created by Dvir Hadad.",
+  "main": "landing_script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvirha9/Messenger-By-Dvir.git"
+  },
+  "author": "Dvir Hadad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dvirha9/Messenger-By-Dvir/issues"
+  },
+  "homepage": "https://github.com/dvirha9/Messenger-By-Dvir#readme"
 }
