@@ -1,6 +1,6 @@
 
 const socket = io("http://localhost:3000");
-// Yay
+
 var send_btn = document.getElementById("send-btn");
 var messenger_div = document.getElementById("messenger");
 var msg_input = document.getElementById("message-input");
