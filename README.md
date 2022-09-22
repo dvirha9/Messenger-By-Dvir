@@ -8,6 +8,7 @@ back-end using [socket.io](https://socket.io) for the Server-Client Communicatio
 # Initialization 
 
 First of all make sure you installed [node.js](https://nodejs.org/) on your system.
+
 For the local inspection of the website, I used [http-server](https://www.npmjs.com/package/http-server):
 
     npm install --global http-server
