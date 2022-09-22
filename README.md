@@ -1,7 +1,7 @@
 
 # Messenger-By-Dvir
 
-Instant messaging website written over HTML, CSS and JavaScript for the front-end and JavaScript for the
+Instant messaging responsive website written over HTML, CSS and JavaScript for the front-end and JavaScript for the
 back-end using [socket.io](https://socket.io) for the Server-Client Communication.
 
 
