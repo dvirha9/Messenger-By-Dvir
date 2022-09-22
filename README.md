@@ -1,3 +1,4 @@
+
 # Messenger-By-Dvir
 
 Instant messaging website written over HTML, CSS and JavaScript for the front-end and JavaScript for the
@@ -10,6 +11,10 @@ First of all make sure you installed [node.js](https://nodejs.org/) on your syst
 For the local inspection of the website, I used [http-server](https://www.npmjs.com/package/http-server):
 
     npm install --global http-server
+
+In your server directory install [socket.io](https://socket.io):
+
+    npm install socket.io
 
 To activate your http-server use the following code on your working directory (where index.html located):
 
