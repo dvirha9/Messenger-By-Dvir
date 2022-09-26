@@ -29,8 +29,11 @@ Visit the website within your local network on http://localhost:8080/.
 You may open the website in a few tabs and/or on your mobile phone and watch the website in action.
 
 # Screenshots
+### Landing page
 ![Landing page](https://gcdnb.pbrd.co/images/HSp28STxSfyu.png?o=1)
 
+### Connecting to a room
 ![Chat UI](https://gcdnb.pbrd.co/images/BmsTnCJyN2cp.png?o=1)
 
+### Chatting with 3 clients
 ![Chat UI](https://gcdnb.pbrd.co/images/HL5oxCUa5WI8.png?o=1)
